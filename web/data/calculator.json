@@ -1,0 +1,20 @@
+{
+    "id": "calculator",
+    "title": "Calculator",
+    "description": "The calculator contract takes in two variables and an action (add/subtract/multiply/divide) and stores the answer in the contract storage. ",
+    "sourceUrl": "https://gitlab.com/tezosisrael/smart-contracts-examples/-/tree/master/examples/calculator",
+    "contracts": [
+        {
+            "address": "KT1VNHR6rkyfM7zg76x3HWeacvdsRJFBPp9s",
+            "lang": "Camel"
+        },
+        {
+            "address": "KT1TTXkHP6mGakU6YVtGBKLv5bSRbb4bznPy",
+            "lang": "Pascal"
+        },
+        {
+            "address": "KT1UWrtRxcTMy836EpTwGWTFHMgJEJ7ybGqL",
+            "lang": "Reason"
+        }
+    ]
+}

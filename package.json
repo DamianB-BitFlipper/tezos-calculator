@@ -1,0 +1,33 @@
+{
+  "dependencies": {
+    "prop-types": "^15.7.2"
+  },
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "format": "prettier --loglevel warn --write \"**/*.{js,css,md}\"",
+    "posttest": "npm run format",
+    "lint": "eslint . --cache --fix",
+    "pretest": "npm run lint",
+    "preweb:dev": "cd web && yarn",
+    "web:dev": "cd web && yarn dev"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "eslint": "^7.17.0",
+    "husky": "^5.0.9",
+    "lint-staged": ">=10",
+    "prettier": ">=2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
+  }
+}
